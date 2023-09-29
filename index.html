@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -175,7 +175,7 @@ https://templatemo.com/tm-583-festava-live
               <div class="services-info">
                 <h2 class="text-white mb-4">من هم صُحبة؟</h2>
 
-                <p class="text-white ">
+                <p class="text-white">
                   Festava Live is free CSS template provided by TemplateMo
                   website. This layout is built on Bootstrap v5.2.2 CSS library.
                   You are free to use this template for your commercial website.
@@ -207,7 +207,6 @@ https://templatemo.com/tm-583-festava-live
           </div>
         </div>
       </section>
-
 
       <section class="schedule-section section-padding" id="section_4">
         <div class="container">
@@ -308,7 +307,8 @@ https://templatemo.com/tm-583-festava-live
           </div>
         </div>
       </section>
-
+      <!-- ========================= team-section start ========================= -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </main>
 
     <footer class="site-footer">
@@ -468,8 +468,6 @@ https://templatemo.com/tm-583-festava-live
 
     <!--
 
-T e m p l a t e M o
-
 -->
 
     <!-- JAVASCRIPT FILES -->
@@ -478,5 +476,31 @@ T e m p l a t e M o
     <script src="js/jquery.sticky.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
   </body>
 </html>
